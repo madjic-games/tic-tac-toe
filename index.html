@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tic Tac Toe vs Computer</title>
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; }
+    #board { display: grid; grid-template-columns: repeat(3, 60px); gap: 5px; margin: 20px auto; width: 200px; }
+    .cell { width: 60px; height: 60px; font-size: 2em; cursor: pointer; background: #f0f0f0; border: 1px solid #ccc; }
+    #scoreboard { margin-top: 20px; }
+    #message { margin: 15px; font-weight: bold; }
+    button { margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <h1>Tic Tac Toe vs Computer</h1>
+  <div id="scoreboard">
+    <span>You (<span id="playerMark"></span>) Wins: <span id="playerWins">0</span></span> |
+    <span>Computer (<span id="computerMark"></span>) Wins: <span id="computerWins">0</span></span> |
+    <span>Draws: <span id="draws">0</span></span>
+  </div>
+  <div id="message"></div>
+  <div id="board"></div>
+  <button onclick="resetGame()">Restart Game</button>
+  <script src="tic-tac-toe.js"></script>
+</body>
+</html>
